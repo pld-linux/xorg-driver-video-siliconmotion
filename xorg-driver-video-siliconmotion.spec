@@ -1,20 +1,24 @@
 Summary:	X.org video driver for Silicon Motion video chips
 Summary(pl):	Sterownik obrazu X.org dla uk³adów graficznych Silicon Motion
 Name:		xorg-driver-video-siliconmotion
-Version:	1.3.1.1
+Version:	1.3.1.2
 Release:	0.1
 License:	MIT
 Group:		X11/Applications
-Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC1/driver/xf86-video-siliconmotion-%{version}.tar.bz2
-# Source0-md5:	61eca5a6e92a6a0dba476aeb2943c4f7
+Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC2/driver/xf86-video-siliconmotion-%{version}.tar.bz2
+# Source0-md5:	f6684d004d1d240ee1a14f571a168712
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
 BuildRequires:	libtool
 BuildRequires:	pkgconfig >= 1:0.19
+BuildRequires:	xorg-proto-fontsproto-devel
+BuildRequires:	xorg-proto-randrproto-devel
+BuildRequires:	xorg-proto-renderproto-devel
 BuildRequires:	xorg-proto-videoproto-devel
+BuildRequires:	xorg-proto-xextproto-devel
 BuildRequires:	xorg-util-util-macros >= 0.99.1
-BuildRequires:	xorg-xserver-server-devel
+BuildRequires:	xorg-xserver-server-devel >= 0.99.3
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -57,6 +61,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README Release.txt
+%doc ChangeLog README Release.txt
 %attr(755,root,root) %{_libdir}/xorg/modules/drivers/siliconmotion_drv.so
 %{_mandir}/man4/siliconmotion.4x*
