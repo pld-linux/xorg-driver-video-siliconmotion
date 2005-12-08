@@ -1,12 +1,12 @@
 Summary:	X.org video driver for Silicon Motion video chips
 Summary(pl):	Sterownik obrazu X.org dla uk³adów graficznych Silicon Motion
 Name:		xorg-driver-video-siliconmotion
-Version:	1.3.1.2
+Version:	1.3.1.3
 Release:	0.1
 License:	MIT
 Group:		X11/Applications
-Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC2/driver/xf86-video-siliconmotion-%{version}.tar.bz2
-# Source0-md5:	f6684d004d1d240ee1a14f571a168712
+Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC3/driver/xf86-video-siliconmotion-%{version}.tar.bz2
+# Source0-md5:	9c6edb02ae464f67f0e71b09b8d8e9a2
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
@@ -17,7 +17,7 @@ BuildRequires:	xorg-proto-randrproto-devel
 BuildRequires:	xorg-proto-renderproto-devel
 BuildRequires:	xorg-proto-videoproto-devel
 BuildRequires:	xorg-proto-xextproto-devel
-BuildRequires:	xorg-util-util-macros >= 0.99.1
+BuildRequires:	xorg-util-util-macros >= 0.99.2
 BuildRequires:	xorg-xserver-server-devel >= 0.99.3
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -51,8 +51,7 @@ Obs³uguje karty PCI i AGP oparte na nastêpuj±cych uk³adach: Lynx
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT \
-	drivermandir=%{_mandir}/man4
+	DESTDIR=$RPM_BUILD_ROOT
 
 rm -f $RPM_BUILD_ROOT%{_libdir}/xorg/modules/*/*.la
 
@@ -63,4 +62,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc ChangeLog README Release.txt
 %attr(755,root,root) %{_libdir}/xorg/modules/drivers/siliconmotion_drv.so
-%{_mandir}/man4/siliconmotion.4x*
+%{_mandir}/man4/siliconmotion.4*
