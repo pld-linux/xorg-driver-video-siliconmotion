@@ -1,12 +1,12 @@
 Summary:	X.org video driver for Silicon Motion video chips
 Summary(pl):	Sterownik obrazu X.org dla uk³adów graficznych Silicon Motion
 Name:		xorg-driver-video-siliconmotion
-Version:	1.3.1.5
+Version:	1.4.1
 Release:	0.1
 License:	MIT
 Group:		X11/Applications
-Source0:	http://xorg.freedesktop.org/releases/X11R7.0/src/driver/xf86-video-siliconmotion-%{version}.tar.bz2
-# Source0-md5:	b9db248697e37352f60dfa2305bd696d
+Source0:	http://xorg.freedesktop.org/releases/individual/driver/xf86-video-siliconmotion-%{version}.tar.bz2
+# Source0-md5:	5f160ab051b16b51cd511829bc8b8cc9
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
@@ -18,7 +18,8 @@ BuildRequires:	xorg-proto-renderproto-devel
 BuildRequires:	xorg-proto-videoproto-devel
 BuildRequires:	xorg-proto-xextproto-devel
 BuildRequires:	xorg-util-util-macros >= 0.99.2
-BuildRequires:	xorg-xserver-server-devel >= 0.99.3
+BuildRequires:	xorg-xserver-server-devel >= 1.0.99.901
+Requires:	xorg-xserver-server >= 1.0.99.901
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
