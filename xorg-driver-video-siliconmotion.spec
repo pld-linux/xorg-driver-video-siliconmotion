@@ -1,5 +1,5 @@
 Summary:	X.org video driver for Silicon Motion video chips
-Summary(pl):	Sterownik obrazu X.org dla uk³adów graficznych Silicon Motion
+Summary(pl.UTF-8):   Sterownik obrazu X.org dla ukÅ‚adÃ³w graficznych Silicon Motion
 Name:		xorg-driver-video-siliconmotion
 Version:	1.4.2
 Release:	0.1
@@ -28,9 +28,9 @@ and AGP video cards based on the following chips: Lynx (SM910), LynxE
 (SM810), Lynx3D (SM820), LynxEM (SM710), LynxEM+ (SM712), Lynx3DM
 (SM720), Cougar3DR (SM730).
 
-%description -l pl
-Sterownik obrazu X.org dla uk³adów graficznych Silicon Motion.
-Obs³uguje karty PCI i AGP oparte na nastêpuj±cych uk³adach: Lynx
+%description -l pl.UTF-8
+Sterownik obrazu X.org dla ukÅ‚adÃ³w graficznych Silicon Motion.
+ObsÅ‚uguje karty PCI i AGP oparte na nastÄ™pujÄ…cych ukÅ‚adach: Lynx
 (SM910), LynxE (SM810), Lynx3D (SM820), LynxEM (SM710), LynxEM+
 (SM712), Lynx3DM (SM720), Cougar3DR (SM730).
 
