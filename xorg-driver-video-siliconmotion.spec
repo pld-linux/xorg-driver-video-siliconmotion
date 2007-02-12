@@ -1,5 +1,5 @@
 Summary:	X.org video driver for Silicon Motion video chips
-Summary(pl.UTF-8):   Sterownik obrazu X.org dla układów graficznych Silicon Motion
+Summary(pl.UTF-8):	Sterownik obrazu X.org dla układów graficznych Silicon Motion
 Name:		xorg-driver-video-siliconmotion
 Version:	1.4.2
 Release:	0.1
