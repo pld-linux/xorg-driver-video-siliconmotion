@@ -1,12 +1,12 @@
 Summary:	X.org video driver for Silicon Motion video chips
 Summary(pl.UTF-8):	Sterownik obrazu X.org dla układów graficznych Silicon Motion
 Name:		xorg-driver-video-siliconmotion
-Version:	1.4.2
-Release:	0.1
+Version:	1.5.1
+Release:	1
 License:	MIT
 Group:		X11/Applications
 Source0:	http://xorg.freedesktop.org/releases/individual/driver/xf86-video-siliconmotion-%{version}.tar.bz2
-# Source0-md5:	31fa07bfc6f06e07216bf34a35091af0
+# Source0-md5:	ee35d7714ce44a2b5ac7ad7b7b7dd75a
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
